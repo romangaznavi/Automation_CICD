@@ -1,0 +1,89 @@
+# Created at 2024-03-25T13:25:59.587
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:398)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+
+
+# Created at 2024-03-25T13:26:10.417
+Unexpected IOException: 8,1,romangaznavi.tests.ErrorValidationsTest,productErrorValidation(romangaznavi.tests.ErrorValidationsTest),null,disconnected: unable to send message to renderer\000A  (failed to check if window was closed: disconnected: not connected to DevTools)\000A  (Session info: chrome=122.0.6261.131)\000ABuild info: version: '4.18.1'\002C revision: 'b1d3319b48'\000ASystem info: os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '19.0.1'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [07edd08d67a3de8579b32abe81cfce25\002C findElement {using=css selector\002C value=.ng-animating}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 122.0.6261.131\002C chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb...\002C userDataDir: C:\005CUsers\005Calish\005CAppData\005CLoca...}\002C fedcm:accounts: true\002C goog:chromeOptions: {debuggerAddress: localhost:53593}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:53593/devtoo...\002C se:cdpVersion: 122.0.6261.131\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 07edd08d67a3de8579b32abe81cfce25,null,disconnected: unable to send message to renderer\000A  (failed to check if window was closed: disconnected: not connected to DevTools)\000A  (Session info: chrome=122.0.6261.131)\000ABuild info: version: '4.18.1'\002C revision: 'b1d3319b48'\000ASystem info: os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '19.0.1'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [07edd08d67a3de8579b32abe81cfce25\002C findElement {using=css selector\002C value=.ng-animating}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 122.0.6261.131\002C chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb...\002C userDataDir: C:\005CUsers\005Calish\005CAppData\005CLoca...}\002C fedcm:accounts: true\002C goog:chromeOptions: {debuggerAddress: localhost:53593}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:53593/devtoo...\002C se:cdpVersion: 122.0.6261.131\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 07edd08d67a3de8579b32abe81cfce25,ErrorValidationsTest.productErrorValidation:28 \00BB WebDriver disconnected: unabl...,org.openqa.selenium.WebDriverException: \000Adisconnected: unable to send message to renderer\000A  (failed to check if window was closed: disconnected: not connected to DevTools)\000A  (Session info: chrome=122.0.6261.131)\000ABuild info: version: '4.18.1'\002C revision: 'b1d3319b48'\000ASystem info: os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '19.0.1'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [07edd08d67a3de8579b32abe81cfce25\002C findElement {using=css selector\002C value=.ng-animating}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 122.0.6261.131\002C chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb...\002C userDataDir: C:\005CUsers\005Calish\005CAppData\005CLoca...}\002C fedcm:accounts: true\002C goog:chromeOptions: {debuggerAddress: localhost:53593}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:53593/devtoo...\002C se:cdpVersion: 122.0.6261.131\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 07edd08d67a3de8579b32abe81cfce25\000A\0009at romangaznavi.tests.ErrorValidationsTest.productErrorValidation(ErrorValidationsTest.java:28)\000A
+
+
+# Created at 2024-03-25T13:26:10.423
+Unexpected IOException: 8,1,romangaznavi.tests.ErrorValidationsTest,tearDown(romangaznavi.tests.ErrorValidationsTest),null,disconnected: not connected to DevTools\000A  (failed to check if window was closed: disconnected: not connected to DevTools)\000A  (Session info: chrome=122.0.6261.131)\000ABuild info: version: '4.18.1'\002C revision: 'b1d3319b48'\000ASystem info: os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '19.0.1'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [07edd08d67a3de8579b32abe81cfce25\002C close {}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 122.0.6261.131\002C chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb...\002C userDataDir: C:\005CUsers\005Calish\005CAppData\005CLoca...}\002C fedcm:accounts: true\002C goog:chromeOptions: {debuggerAddress: localhost:53593}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:53593/devtoo...\002C se:cdpVersion: 122.0.6261.131\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 07edd08d67a3de8579b32abe81cfce25,null,disconnected: not connected to DevTools\000A  (failed to check if window was closed: disconnected: not connected to DevTools)\000A  (Session info: chrome=122.0.6261.131)\000ABuild info: version: '4.18.1'\002C revision: 'b1d3319b48'\000ASystem info: os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '19.0.1'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [07edd08d67a3de8579b32abe81cfce25\002C close {}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 122.0.6261.131\002C chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb...\002C userDataDir: C:\005CUsers\005Calish\005CAppData\005CLoca...}\002C fedcm:accounts: true\002C goog:chromeOptions: {debuggerAddress: localhost:53593}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:53593/devtoo...\002C se:cdpVersion: 122.0.6261.131\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 07edd08d67a3de8579b32abe81cfce25,ErrorValidationsTest>BaseTest.tearDown:86 \00BB WebDriver disconnected: not connec...,org.openqa.selenium.WebDriverException: \000Adisconnected: not connected to DevTools\000A  (failed to check if window was closed: disconnected: not connected to DevTools)\000A  (Session info: chrome=122.0.6261.131)\000ABuild info: version: '4.18.1'\002C revision: 'b1d3319b48'\000ASystem info: os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '19.0.1'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [07edd08d67a3de8579b32abe81cfce25\002C close {}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 122.0.6261.131\002C chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb...\002C userDataDir: C:\005CUsers\005Calish\005CAppData\005CLoca...}\002C fedcm:accounts: true\002C goog:chromeOptions: {debuggerAddress: localhost:53593}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:53593/devtoo...\002C se:cdpVersion: 122.0.6261.131\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 07edd08d67a3de8579b32abe81cfce25\000A
+
+
+# Created at 2024-03-25T13:26:15.201
+Unexpected IOException: 5,1,romangaznavi.tests.SubmitOrderTest,submitOrder(romangaznavi.tests.SubmitOrderTest),purchase,null,null
+
+
+# Created at 2024-03-25T13:26:19.177
+Unexpected IOException: 6,1,romangaznavi.tests.SubmitOrderTest,submitOrder(romangaznavi.tests.SubmitOrderTest),null,null,null
+
+
+# Created at 2024-03-25T13:26:19.316
+Unexpected IOException with stream: Mar 25, 2024 1:26:19 P.M. org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1337)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1282)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1282)
+
+
+
+# Created at 2024-03-25T13:26:24.024
+Unexpected IOException: 5,1,romangaznavi.tests.SubmitOrderTest,submitOrder(romangaznavi.tests.SubmitOrderTest),purchase,null,null
+
+
+# Created at 2024-03-25T13:26:25.464
+Unexpected IOException: 8,1,romangaznavi.tests.SubmitOrderTest,submitOrder(romangaznavi.tests.SubmitOrderTest),null,Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null,null,Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null,SubmitOrderTest.submitOrder:29 \00BB NullPointer Cannot invoke "org.openqa.seleniu...,java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null\000A\0009at romangaznavi.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:29)\000A
+
+
+# Created at 2024-03-25T13:26:25.556
+Unexpected IOException with stream: Mar 25, 2024 1:26:25 P.M. org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1337)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1282)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1282)
+
+
+
+# Created at 2024-03-25T13:26:25.599
+Unexpected IOException: 5,1,romangaznavi.tests.SubmitOrderTest,orderHistoryTest(romangaznavi.tests.SubmitOrderTest),romangaznavi.tests.SubmitOrderTest,null,null
+
+
+# Created at 2024-03-25T13:26:25.602
+Unexpected IOException: 9,1,romangaznavi.tests.SubmitOrderTest,orderHistoryTest(romangaznavi.tests.SubmitOrderTest),null,Method romangaznavi.tests.SubmitOrderTest.orderHistoryTest() on instance romangaznavi.tests.SubmitOrderTest@6dbb137d depends on not successfully finished methods \000A[romangaznavi.tests.SubmitOrderTest.submitOrder() on instance romangaznavi.tests.SubmitOrderTest@6dbb137d],null
+
+
+# Created at 2024-03-25T13:26:26.069
+Unexpected IOException: 2,1,org.apache.maven.surefire.testng.TestNGDirectoryTestSuite,TestSuite,null,null,null
+
+

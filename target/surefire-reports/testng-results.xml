@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="2" failed="2" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-26T14:03:01 EDT" name="Suite" finished-at="2024-03-26T14:04:02 EDT" duration-ms="61155">
+    <groups>
+      <group name="ErrorHandling">
+        <method signature="ErrorValidationsTest.loginErrorValidation()[pri:0, instance:romangaznavi.tests.ErrorValidationsTest@e19bb76]" name="loginErrorValidation" class="romangaznavi.tests.ErrorValidationsTest"/>
+      </group> <!-- ErrorHandling -->
+      <group name="purchase">
+        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:romangaznavi.tests.SubmitOrderTest@b7c4869]" name="submitOrder" class="romangaznavi.tests.SubmitOrderTest"/>
+      </group> <!-- purchase -->
+    </groups>
+    <test started-at="2024-03-26T14:03:01 EDT" name="Submit Order Test" finished-at="2024-03-26T14:03:41 EDT" duration-ms="40719">
+      <class name="romangaznavi.tests.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:romangaznavi.tests.SubmitOrderTest@b7c4869]" started-at="2024-03-26T14:03:01 EDT" name="launchApplication" finished-at="2024-03-26T14:03:12 EDT" duration-ms="10773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:romangaznavi.tests.SubmitOrderTest@b7c4869]" started-at="2024-03-26T14:03:12 EDT" name="submitOrder" data-provider="getData" finished-at="2024-03-26T14:03:28 EDT" duration-ms="15826" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Roman@123, product=ZARA COAT 3, email=roman1@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:romangaznavi.tests.SubmitOrderTest@b7c4869]" started-at="2024-03-26T14:03:28 EDT" name="tearDown" finished-at="2024-03-26T14:03:28 EDT" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:romangaznavi.tests.SubmitOrderTest@b7c4869]" started-at="2024-03-26T14:03:28 EDT" name="launchApplication" finished-at="2024-03-26T14:03:40 EDT" duration-ms="12330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:romangaznavi.tests.SubmitOrderTest@b7c4869]" started-at="2024-03-26T14:03:40 EDT" name="submitOrder" data-provider="getData" finished-at="2024-03-26T14:03:41 EDT" duration-ms="1131" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Password@123, product=ADIDA ORIGINAL, email=aajj123@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at romangaznavi.pageobjects.ProductCatalogue.addProductToCart(ProductCatalogue.java:55)
+at romangaznavi.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:romangaznavi.tests.SubmitOrderTest@b7c4869]" started-at="2024-03-26T14:03:41 EDT" name="tearDown" finished-at="2024-03-26T14:03:41 EDT" duration-ms="98" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="orderHistoryTest()[pri:0, instance:romangaznavi.tests.SubmitOrderTest@b7c4869]" started-at="2024-03-26T14:03:41 EDT" name="orderHistoryTest" finished-at="2024-03-26T14:03:41 EDT" depends-on-methods="romangaznavi.tests.SubmitOrderTest.submitOrder" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method romangaznavi.tests.SubmitOrderTest.orderHistoryTest() on instance romangaznavi.tests.SubmitOrderTest@b7c4869 depends on not successfully finished methods 
+[romangaznavi.tests.SubmitOrderTest.submitOrder() on instance romangaznavi.tests.SubmitOrderTest@b7c4869]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method romangaznavi.tests.SubmitOrderTest.orderHistoryTest() on instance romangaznavi.tests.SubmitOrderTest@b7c4869 depends on not successfully finished methods 
+[romangaznavi.tests.SubmitOrderTest.submitOrder() on instance romangaznavi.tests.SubmitOrderTest@b7c4869]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderHistoryTest -->
+      </class> <!-- romangaznavi.tests.SubmitOrderTest -->
+    </test> <!-- Submit Order Test -->
+    <test started-at="2024-03-26T14:03:01 EDT" name="Error Validations Test" finished-at="2024-03-26T14:04:02 EDT" duration-ms="61154">
+      <class name="romangaznavi.tests.ErrorValidationsTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:romangaznavi.tests.ErrorValidationsTest@e19bb76]" started-at="2024-03-26T14:03:01 EDT" name="launchApplication" finished-at="2024-03-26T14:03:19 EDT" duration-ms="17797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginErrorValidation()[pri:0, instance:romangaznavi.tests.ErrorValidationsTest@e19bb76]" started-at="2024-03-26T14:03:19 EDT" name="loginErrorValidation" finished-at="2024-03-26T14:03:20 EDT" duration-ms="1182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:romangaznavi.tests.ErrorValidationsTest@e19bb76]" started-at="2024-03-26T14:03:20 EDT" name="tearDown" finished-at="2024-03-26T14:03:20 EDT" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:romangaznavi.tests.ErrorValidationsTest@e19bb76]" started-at="2024-03-26T14:03:20 EDT" name="launchApplication" finished-at="2024-03-26T14:03:46 EDT" duration-ms="26561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="productErrorValidation()[pri:0, instance:romangaznavi.tests.ErrorValidationsTest@e19bb76]" started-at="2024-03-26T14:03:46 EDT" name="productErrorValidation" finished-at="2024-03-26T14:04:02 EDT" duration-ms="15211" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at org.testng.Assert.assertFalse(Assert.java:89)
+at romangaznavi.tests.ErrorValidationsTest.productErrorValidation(ErrorValidationsTest.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:romangaznavi.tests.ErrorValidationsTest@e19bb76]" started-at="2024-03-26T14:04:02 EDT" name="tearDown" finished-at="2024-03-26T14:04:02 EDT" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- romangaznavi.tests.ErrorValidationsTest -->
+    </test> <!-- Error Validations Test -->
+  </suite> <!-- Suite -->
+</testng-results>
